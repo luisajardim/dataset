@@ -1,0 +1,85 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>160</x><y>440</y><w>500</w><h>190</h></coordinates><panel_attributes>
+Pessoa
+
+--
+- nome : String
+- dataNascimento: LocalDate
+- altura: float
+- peso: int
+- renda: float
+- naturalidade: String
+- feliz: boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>0</y><w>500</w><h>420</h></coordinates><panel_attributes>Dataset
+--
+-pessoas: Pessoa[]
++ MAX_PESSOAS : int {static, final}
+--
++ addPessoa(pessoa : Pessoa) : void 
++ removePessoa(pessoa : Pessoa) : void 
++ removePessoaByName(nome : String) : void 
++ replacePessoa(oldPessoa : Pessoa, newPessoa : Pessoa) : void 
++ getPessoaByName(nome : String) : Pessoa 
++ getAll() : Pessoa[]        
++ removeAll() : void         
++ size() : int               
++ maxAltura() : float        
++ minAltura() : float        
++ avgAltura() : float        
++ maxPeso() : int            
++ minPeso() : int            
++ avgPeso() : float          
++ percentAdult() : float     
++ percentEstadoCivil(estadoCivil : EstadoCivil) : float 
++ modeEstadoCivil() : EstadoCivil 
++ percentEscolaridade(escolaridade : Escolaridade) : float 
++ modeEscolaridade() : Escolaridade 
++ percentMoradia(moradia : Moradia) : float 
++ modeMoradia() : Moradia    
++ percentHobby() : float     
++ percentFeliz() : float  </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>640</y><w>240</w><h>130</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Genero 
+--
++FEMININO
++MASCULINO
++NAO_BINARIO
++NAO_RESPONDER
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>780</y><w>240</w><h>130</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Hobby 
+--
++ARTE
++ESPORTE
++CINEMA
++LIVRO
++MÚSICA
++CULINÁRIA
++GAME
++NENHUM
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>640</y><w>250</w><h>130</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Escolaridade
+--
++NENHUMA
++FUNDAMENTAL
++MEDIO
++SUPERIOR
++POS_GRADUACAO
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>780</y><w>250</w><h>130</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Moradia 
+--
++COM_FAMILIA
++ALUGUEL
++CASA_PROPRIA
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>920</y><w>240</w><h>140</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+EstadoCivil
+--
++SOLTEIRO
++CASADO
++SEPARADO
++DIVORCIADO
++VIUVO
++UNIAO_ESTAVEL</panel_attributes><additional_attributes></additional_attributes></element></diagram>
